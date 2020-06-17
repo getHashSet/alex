@@ -40,7 +40,6 @@ const StyledHero = styled.div`
   margin: 0;
   height: 100vh;
   background-color: ${(props) => props.theme.color.dark};
-  color: ${(props) => props.theme.color.white};
   z-index: -1;
 
   div:first-child {
@@ -66,26 +65,30 @@ const StyledHero = styled.div`
     margin: auto;
 
     h1,
-    h2 {
+    h2,
+    span {
+      color: ${(props) => props.theme.color.white};
       user-select: none;
     }
 
     h1 {
       line-height: 2em;
-      font-size: 3em;
+      font-size: 5em;
       font-weight: 800;
 
       span {
+        font-size: 1em;
         font-weight: 100;
+        font-family: ${(props) => props.theme.fonts.title};
       }
 
       @media (max-width: 768px) {
-        font-size: 2em;
+        font-size: 3em;
       }
     }
 
     h2 {
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: 200;
 
       &::first-letter {
