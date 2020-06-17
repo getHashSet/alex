@@ -84,8 +84,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  /* font: inherit; */
+  font-size: 16px;
+  color: #2d3436;
   vertical-align: baseline;
 }
 
@@ -107,6 +107,11 @@ section {
 
 body {
   line-height: 1;
+}
+
+p {
+  line-height: 1.2em;
+  font-size: 1.2em;
 }
 
 ol,

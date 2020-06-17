@@ -4,7 +4,7 @@
 export const color = {
   black: "#000",
   dark: "#2d3436",
-  white: "fff",
+  white: "#fff",
   light: "#dfe6e9",
   blue: "#3498db",
   darkBlue: "#2980b9",
@@ -16,7 +16,6 @@ export const color = {
   darkOrange: "#e67e22",
   yellow: "#f6e58d",
   darkYellow: "#f9ca24",
-  white: "#fff",
 };
 
 // ======== //
