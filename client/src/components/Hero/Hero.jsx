@@ -15,15 +15,13 @@ Hero.defaultProps = {
   subtitle: "connect with your music",
 };
 
+// ========== //
+//   EXPORT   //
+// ========== //
 export default function Hero(props) {
   return (
-    <StyledHero
-      style={{
-        background: `url(${props.backgroundImage})`,
-        backgroundSize: "cover",
-      }}
-    >
-      <div></div>
+    <StyledHero backgroundImage={props.backgroundImage}>
+      <div>{/* Shadow Box */}</div>
       <div>
         <h1> {props.title} </h1>
         <h2> {props.subtitle} </h2>
@@ -37,10 +35,17 @@ export default function Hero(props) {
 // ========== //
 const StyledHero = styled.div`
   position: relative;
+  background: url(${(props) => props.backgroundImage});
+  background-size: cover;
   margin: 0;
   height: 100vh;
+  background-attachment: fixed;
   background-color: ${(props) => props.theme.color.dark};
   z-index: -1;
+
+  @media (max-width: 756px) {
+    background-attachment: scroll;
+  }
 
   div:first-child {
     position: absolute;
