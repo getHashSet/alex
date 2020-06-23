@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Hero from "../../components/Hero/Hero";
+import Price from "../../components/Price/Price";
 
 export default function Home() {
   return (
@@ -19,6 +20,11 @@ export default function Home() {
         minima tenetur quis ab vero, veritatis nam ipsa nobis voluptates? Quos
         voluptatum quod iste facere neque maiores voluptates saepe eum?
       </StyledParagraph>
+
+      {/* ========= */}
+      {/*   PRICE   */}
+      {/* ========= */}
+      <Price />
     </main>
   );
 }

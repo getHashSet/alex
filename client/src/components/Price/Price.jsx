@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+// -------- //
+//   NOTE   //
+// -------- //
+// This component will take an array of objects and display the cards on the screen.
+
 // --------- //
 //   PROPS   //
 // --------- //
@@ -32,8 +37,8 @@ export default function Price(props) {
   return (
     <React.Fragment>
       <StyledRoot>
-        {props.priceCards.map((item) => {
-          return <StyledCard>{item.cost}</StyledCard>;
+        {props.priceCards.map((item, index) => {
+          return <StyledCard key={`cost_${index}`}>{item.cost}</StyledCard>;
         })}
       </StyledRoot>
     </React.Fragment>
