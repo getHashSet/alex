@@ -3,21 +3,33 @@ import styled from "styled-components";
 
 export default function Nav() {
   return (
-    <StyledNav>
-      <ul>
+    <React.Fragment>
+      <StyledButton>Home</StyledButton>
+      <StyledLinkButton>
         <li>Home</li>
-        <li>Prices</li>
-        <li>Contact</li>
-      </ul>
-    </StyledNav>
+        <li>Price</li>
+        <li>About</li>
+      </StyledLinkButton>
+    </React.Fragment>
   );
 }
 
-const StyledNav = styled.nav`
+const StyledButton = styled.nav`
   position: fixed;
   bottom: 0;
   left: 0;
   padding: 1em;
   margin: 0;
   width: calc(100vw - 2em);
+`;
+
+const StyledLinkButton = styled.ul`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  li {
+    background-color: ${(props) => props.theme.color.dark};
+    opacity: 0.6;
+  }
 `;
