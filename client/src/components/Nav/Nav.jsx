@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+// ---------- //
+//   RETURN   //
+// ---------- //
 export default function Nav() {
   return (
     <React.Fragment>
@@ -23,6 +26,9 @@ const StyledButton = styled.nav`
   width: calc(100vw - 2em);
 `;
 
+// ---------- //
+//   STYLED   //
+// ---------- //
 const StyledLinkButton = styled.ul`
   position: absolute;
   left: 0;
